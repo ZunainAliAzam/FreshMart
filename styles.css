@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
 
-::root{
-    
-}
+:root{
+    --green:green;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow: 0 .1rem 1rem rgba(1,1,0.2);
+    --border: 2rem solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+    }
 *{
     margin: 0;
     padding:0;
@@ -10,5 +15,47 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    transition: all .5s linear;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+}
+
+body {
+    background-color: #eee !important;
+}
+
+.navbar{
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+.navbar-brand{
+    font-size: 2.5rem !important;
+    font-weight: bolder !important;
+}
+.navbar-brand .bi-basket{
+    size: 2.5rem !important;
+}
+.navbar-container .nav-item{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color: var(--black)
+}
+.navbar-container .nav-item a:hover{
+    color:var(--green)
+}
+.icons{
+    background-color:
 }
