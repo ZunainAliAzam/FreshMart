@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap');
 
-:root{
-    --green:green;
-    --black:#130f40;
-    --light-color:#666;
-    --box-shadow: 0 .1rem 1rem rgba(1,1,0.2);
-    --border: 2rem solid rgba(0,0,0.1);
-    --outline: .1rem solid rgba(0,0,0.1);
-    }
-*{
+:root {
+    --green: green;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .1rem 1rem rgba(1, 1, 0.2);
+    --border: 2rem solid rgba(0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0.1);
+}
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     outline: none;
@@ -19,48 +20,52 @@
     transition: all .2s linear;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top:7rem;
+    scroll-padding-top: 7rem;
 }
 
 body {
     background-color: #eee !important;
 }
 
-.header{
+.header {
     background-color: #fff;
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
     box-shadow: var(--box-shadow);
 }
+
 .header .logo {
     font-size: 2.2rem !important;
     font-weight: bolder !important;
 }
-.header .logo i{
+
+.header .logo i {
     color: var(--green);
 }
-.header .navbar a{
+
+.header .navbar a {
     font-size: 1.7rem;
-    margin:0 1rem;
+    margin: 0 1rem;
     color: var(--black)
 }
-.header .navbar a:hover{
-    color:var(--green)
+
+.header .navbar a:hover {
+    color: var(--green)
 }
 
-.header .icons div{
+.header .icons div {
     height: 4.5rem;
-    width:4.5rem;
+    width: 4.5rem;
     border: 1px solid;
     line-height: 4.5rem;
     border-radius: .5rem;
@@ -71,79 +76,154 @@ body {
     margin-right: 2px;
     border: none;
 }
-.header .icons div:hover{
+
+.header .icons div:hover {
     background-color: var(--black);
-    color:#fff;
+    color: #fff;
     cursor: pointer;
 }
-#menu-btn{
+
+#menu-btn {
     display: none;
 }
-.searchbar{
+
+.searchbar {
     border: 1px solid;
     position: absolute;
-    top:110%;
-    right:-110%;
+    top: 110%;
+    right: -110%;
     width: 30rem;
     height: 4rem;
-    background:#fff;
+    background: #fff;
     border-radius: 5px;
-    border:none;
-    overflow:hidden;
+    border: none;
+    overflow: hidden;
     display: flex;
     align-items: center;
     box-shadow: var(--box-shadow);
 }
-.header .searchbar.active{
+
+.header .searchbar.active {
     right: 2rem;
     transition: .4s linear;
 }
+
 .searchbar input {
     width: 100%;
-    height:100%;
-    padding:1rem;
+    height: 100%;
+    padding: 1rem;
 }
 
-.searchbar label{
+.searchbar label {
     align-items: center;
     cursor: pointer;
     font-size: 1.2rem;
-    padding:1rem;
+    padding: 1rem;
 }
-.searchbar label:hover{
+
+.searchbar label:hover {
     background-color: rgb(58, 238, 58);
     border-radius: 20px;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
 }
 
-.loginform{
+.loginform {
     display: grid;
-    gap:10px;
+    gap: 10px;
     font-size: 12px;
     position: absolute;
-    padding:4rem;
-    top: -400%;
-    right:2rem;
+    padding: 4rem;
+    top: -1000%;
+    right: 2rem;
     width: 30rem;
     background: #fff;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
-.loginform h2{
+
+.loginform h2 {
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
-.loginform input{
-    border:.1rem solid var(--black);
+
+.loginform input {
+    border: .1rem solid var(--black);
     background: #eee;
     height: 100%;
-    width:100%;
-    padding:3px;
+    width: 100%;
+    padding: 3px;
     font-size: 14px;
     border-radius: 5px;
 }
-.loginform.active{
-    top:110%;
+
+.loginform #submit {
+    border: 1px solid #666;
+    padding: 3px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.loginform #submit:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.loginform span {
+    font-size: 14px;
+}
+
+.loginform.active {
+    top: 110%;
     transition: .4s linear;
+}
+
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+}
+@media (max-width: 768px) {
+    
+    .header .navbar{
+        background: #fff;
+        color:#130f40;
+        position: absolute;
+        top: -1000%;
+        right: 2rem;
+        width:30rem;                
+        border-radius: 4px;
+        box-shadow: var(--box-shadow);
+    } 
+    .header .navbar a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar.active{
+        top:110%;
+        transition: .4s linear;
+    }
+    .loginform {
+        font-size: 10px;
+    }
+    .loginform input{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 40%;
+    }
+    .header{
+        padding:2rem;
+    }
 }

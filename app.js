@@ -11,3 +11,10 @@ let loginBtn=document.querySelector("#login-btn");
 loginBtn.onclick = () =>{
     loginForm.classList.toggle('active');
 }
+
+let menu=document.querySelector(".navbar");
+let menuBtn=document.querySelector("#menu-btn");
+
+menuBtn.onclick = () =>{
+    menu.classList.toggle('active');
+}
