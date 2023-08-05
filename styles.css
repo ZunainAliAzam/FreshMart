@@ -15,6 +15,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
+    text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -29,7 +30,7 @@ body {
     background-color: #eee !important;
 }
 
-.navbar{
+.header{
     background-color: #fff;
     position: fixed;
     top:0;
@@ -41,21 +42,55 @@ body {
     padding: 2rem 9%;
     box-shadow: var(--box-shadow);
 }
-.navbar-brand{
-    font-size: 2.5rem !important;
+.header .logo {
+    font-size: 2.2rem !important;
     font-weight: bolder !important;
 }
-.navbar-brand .bi-basket{
-    size: 2.5rem !important;
+.header .logo i{
+    color: var(--green);
 }
-.navbar-container .nav-item{
+.header .navbar a{
     font-size: 1.7rem;
     margin:0 1rem;
     color: var(--black)
 }
-.navbar-container .nav-item a:hover{
+.header .navbar a:hover{
     color:var(--green)
 }
-.icons{
-    background-color:
+
+.header .icons div{
+    height: 4.5rem;
+    width:4.5rem;
+    border: 1px solid;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 2px;
+    border: none;
+}
+.header .icons div:hover{
+    background-color: var(--black);
+    color:#fff;
+    cursor: pointer;
+}
+#menu-btn{
+    display: none;
+}
+.search{
+    border: 1px solid;
+    position: absolute;
+    top:110%;
+    right:2rem;
+    width: 30rem;
+    height: 4rem;
+    background:#fff;
+    border-radius: 5px;
+    border:none;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
 }
