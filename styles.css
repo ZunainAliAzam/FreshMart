@@ -94,3 +94,21 @@ body {
     align-items: center;
     box-shadow: var(--box-shadow);
 }
+.search input {
+    width: 100%;
+    height:100%;
+    padding:1rem;
+}
+
+.search label{
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding:1rem;
+}
+.search label:hover{
+    background-color: rgb(58, 238, 58);
+    border-radius: 20px;
+    color:#fff;
+    cursor: pointer;
+}
