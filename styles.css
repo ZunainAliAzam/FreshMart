@@ -115,3 +115,31 @@ body {
     color:#fff;
     cursor: pointer;
 }
+
+.loginform{
+    display: grid;
+    gap:10px;
+    font-size: 12px;
+    position: absolute;
+    padding:4rem;
+    top: 110%;
+    right:2rem;
+    width: 30rem;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.loginform h2{
+    text-align: center;
+}
+.loginform input{
+    border:.1rem solid var(--black);
+    background: #eee;
+    height: 100%;
+    width:100%;
+    padding:3px;
+    font-size: 14px;
+
+    border-radius: 5px;
+}
