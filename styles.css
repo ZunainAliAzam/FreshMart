@@ -4,7 +4,7 @@
     --green: green;
     --black: #130f40;
     --light-color: #666;
-    --box-shadow: 0 .1rem 1rem rgba(1, 1, 0.2);
+    --box-shadow: 0 .1rem 1rem rgba(1, 1, 0.4, 0.7);
     --border: 2rem solid rgba(0, 0, 0.1);
     --outline: .1rem solid rgba(0, 0, 0.1);
 }
@@ -180,7 +180,57 @@ body {
     transition: .4s linear;
 }
 .banner {
-    
+    background: url(./images/vegetables.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: inherit;
+    text-align:left;
+    padding-top: 7rem;
+
+}
+
+.banner .content{
+    padding-top: 7rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+.banner .content h3 {
+    font-size: 2.5rem;
+    color:#fff
+}
+.banner .content h3 span{
+    background-color:#fff;
+    color:black;
+    clip-path:polygon(100% 0,93% 50%,100% 90%, 0% 100%, 7% 50%, 0% 0%);
+    padding:0.2rem 1rem;
+}
+.banner .content .aewin{
+    font-size: 1.8rem;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+.banner .content .download{
+    color:#fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom:3px;
+}
+.banner .content .banner-btn{
+    border: 1px solid;
+    background: black;
+    color:white;
+    font-weight: 600;
+    padding:0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    margin-bottom:10px;
+}
+.banner .content .banner-btn:hover{
+    background-color: rgb(58, 238, 58);
+    color:black;
 }
 
 @media (max-width: 991px) {
