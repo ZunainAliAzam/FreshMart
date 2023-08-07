@@ -231,6 +231,14 @@ body {
     font-weight: 800;
     margin-bottom:10px;
 }
+.banner .content .banner-btn .arrow {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-20%);
+    font-size: 15px;
+}
+
 .banner .content .banner-btn:hover{
     background-color: rgb(58, 238, 58);
     color:black;
