@@ -274,6 +274,33 @@ body {
     font-size:1.2rem;
 }
 
+.categories h1{
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+}
+.categories .container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    display: inline-flex;
+}
+
+.categories .container .category-cards{
+    padding:3rem 5rem 0rem 5rem;
+    box-shadow: var(--box-shadow);
+    background-color: #fff ;
+    text-align: center;
+    margin-right: 3rem;
+    border-radius: 5px;
+}
+.categories .container .category-cards img{
+    width:80%;
+    height: 60%;
+}
+.categories .container .category-cards h3{
+    font-size: 1.8rem;
+}
+
 @media (max-width: 991px) {
     html{
         font-size: 55%;
@@ -355,6 +382,33 @@ body {
     .featured .container .featured-cards p{
         font-size:1.2rem;
         padding:0 12rem;
+    }
+
+    .categories h1{
+        padding: 3rem 5rem;
+        font-size: 2.5rem;
+    }
+    .categories .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 2rem;
+        display: inline-flex;
+    }
+    
+    .categories .container .category-cards{
+        padding:3rem 5rem 0rem 5rem;
+        box-shadow: var(--box-shadow);
+        background-color: #fff ;
+        text-align: center;
+        margin-right: 3rem;
+        border-radius: 5px;
+    }
+    .categories .container .category-cards img{
+        width:80%;
+        height: 60%;
+    }
+    .categories .container .category-cards h3{
+        font-size: 1.8rem;
     }
 }
 
