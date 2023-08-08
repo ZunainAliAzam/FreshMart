@@ -400,7 +400,7 @@ body {
         box-shadow: var(--box-shadow);
         background-color: #fff ;
         text-align: center;
-        margin-right: 3rem;
+        margin-bottom: 3rem;
         border-radius: 5px;
     }
     .categories .container .category-cards img{
