@@ -253,7 +253,6 @@ body {
     padding-right: 5rem;
     padding-bottom: 2rem;
     display: inline-flex;
-    justify-content: space-between;
 }
 
 .featured .container .featured-cards{
@@ -267,7 +266,6 @@ body {
 .featured .container .featured-cards img{
     width:50%;
     height: 50%;
-    border-radius: 30px;
 }
 .featured .container .featured-cards h3{
     font-size: 1.8rem;
@@ -275,6 +273,7 @@ body {
 .featured .container .featured-cards p{
     font-size:1.2rem;
 }
+
 @media (max-width: 991px) {
     html{
         font-size: 55%;
@@ -337,6 +336,7 @@ body {
     }
     
     .featured .container .featured-cards{
+        
         padding:2rem 1rem;
         box-shadow: var(--box-shadow);
         background-color: #fff ;
