@@ -396,7 +396,7 @@ body {
     }
     
     .categories .container .category-cards{
-        padding:3rem 5rem 0rem 5rem;
+        padding:3rem 5rem 1rem 5rem;
         box-shadow: var(--box-shadow);
         background-color: #fff ;
         text-align: center;
