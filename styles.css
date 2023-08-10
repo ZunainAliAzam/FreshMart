@@ -276,10 +276,6 @@ body {
     text-align: center;
     margin:1rem;
     border-radius: 5px;
-    /* min-width: 20rem;
-    max-width: 35rem; 
-    height: 30rem;*/
-    /* margin-right: 3rem; */
 }
 
 .featured-cards img {
@@ -311,7 +307,7 @@ body {
 }
 
 .category-cards {
-    padding: 3rem;
+    padding: 3rem 4rem 3rem 1rem;
     box-shadow: var(--box-shadow);
     background-color: #fff;
     text-align: center;
@@ -323,16 +319,57 @@ body {
 }
 
 .categories .container .category-cards img {
-    width: 100%;
-    height: 80%;
-    align-items: center;
+    width: 180px;
+    height: 150px;
+    align-items: left;
 }
 
-.categories .container .category-cards h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
+.categories .container .category-cards p {
+    padding: 0 0 0 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
+
+.menu h1 {
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 3rem 5%;
+    margin: auto;
+}
+
+.menu-cards {
+    padding: 3rem 4rem 3rem 1rem;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    text-align: center;
+    margin:1rem;
+    border-radius: 5px;
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 25rem;
+}
+
+.menu-container .menu-cards img {
+    width: 180px;
+    height: 150px;
+    align-items: left;
+}
+
+.menu-cards p {
+    padding: 0 0 0 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 @media (max-width: 991px) {
     html {
         font-size: 55%;
