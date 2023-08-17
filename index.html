@@ -1,252 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fresh Mart</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="" class="logo"
-        ><i class="fa fa-shopping-basket" aria-hidden="true">FreshMart</i>
-      </a>
 
-      <nav class="navbar">
-        <a href="#home" class="navlink active">Home</a>
-        <a href="#features" class="navlink active">Features</a>
-        <a href="#stores" class="navlink active">Stores</a>
-        <a href="#menu" class="navlink active">Menu</a>
-        <a href="#blogs" class="navlink active">Blogs</a>
-        <a href="#contact" class="navlink active">Contact</a>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Mart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-      <div class="icons">
-        <div href="#menu" class="fa fa-bars" id="menu-btn"></div>
-        <div href="#search" class="fa fa-search" id="search-btn"></div>
-        <div href="#cart" class="fa fa-shopping-cart" id="cart-btn"></div>
-        <div href="#login" class="fa fa-user" id="login-btn"></div>
+<body>
+  <header class="header">
+    <a href="" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true">FreshMart</i>
+    </a>
+
+    <nav class="navbar">
+      <a href="#home" class="navlink active">Home</a>
+      <a href="#features" class="navlink active">Features</a>
+      <a href="#stores" class="navlink active">Stores</a>
+      <a href="#menu" class="navlink active">Menu</a>
+      <a href="#blogs" class="navlink active">Blogs</a>
+      <a href="#contact" class="navlink active">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <div href="#menu" class="fa fa-bars" id="menu-btn"></div>
+      <div href="#search" class="fa fa-search" id="search-btn"></div>
+      <div href="#cart" class="fa fa-shopping-cart" id="cart-btn"></div>
+      <div href="#login" class="fa fa-user" id="login-btn"></div>
+    </div>
+
+    <form class="searchbar">
+      <input type="search" id="search-box" placeholder="Search the product here">
+      <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <form class="loginform">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Enter Email" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button id="submit"><span>Login</span></button>
+      <p>Forgot Password <a href="">Click here</a></p>
+      <p>Create an account <a href="">Click here</a></p>
+    </form>
+  </header>
+
+  <section class="banner">
+    <div class="banner content">
+      <h3>Fresh <span>Choices</span>, Fresh <span>Joys</span></h3>
+      <p class="aewin">Groceries and more at your doorstep</p>
+      <button class="banner-btn">Shop Now <span class="arrow">&#10148;</span></button>
+      <p class="download"></p>
+      <img src="./images/appstore.png" width="200" alt="google play and apple app store logos" />
+    </div>
+  </section>
+
+
+  <section class="categories">
+    <h1>Popular Categories</h1>
+
+    <div class="categories container">
+      <div class="category-cards">
+        <img src="./images/category-1.jpeg" alt="fresh food">
+        <p>Chips</p>
       </div>
 
-      <form class="searchbar">
-        <input type="search" id="search-box" placeholder="Search the product here">
-        <label for="search-box" class="fa fa-search"></label>
-      </form>
-
-      <form class="loginform">
-        <h2>Login</h2>
-        <input type="email" id="email" placeholder="Enter Email" required>
-        <input type="password" id="password" placeholder="Enter Password" required>
-        <button id="submit"><span>Login</span></button>
-        <p>Forgot Password <a href="">Click here</a></p>
-        <p>Create an account <a href="">Click here</a></p>
-      </form>
-    </header>
-
-    <section class="banner">
-      <div class="banner content">
-        <h3>Fresh <span>Choices</span>, Fresh <span>Joys</span></h3>
-        <p class="aewin">Groceries and more at your doorstep</p>
-        <button class="banner-btn">Shop Now <span class="arrow">&#10148;</span></button>
-        <p class="download"></p>
-        <img src="./images/appstore.png" width="200" alt="google play and apple app store logos" />
+      <div class="category-cards">
+        <img src="./images/category-2.jpeg" alt="24/7">
+        <p>Dairy Products</p>
       </div>
-    </section>
 
-    
-    <section class="categories">
-      <h1>Popular Categories</h1>
+      <div class="category-cards">
+        <img src="./images/category-3.jpeg" alt="">
+        <p>Bakery and biscuits</p>
+      </div>
 
-      <div class="categories container">
-        <div class="category-cards">
-          <img src="./images/category-1.jpeg" alt="fresh food">
-          <p>Chips</p>
-        </div>
-      
-        <div class="category-cards">
-          <img src="./images/category-2.jpeg" alt="24/7">
-          <p>Dairy Products</p>
-        </div>
-      
-        <div class="category-cards">
-          <img src="./images/category-3.jpeg" alt="">
-          <p>Bakery and biscuits</p>
-        </div>
+      <div class="category-cards">
+        <img src="./images/category-4.jpeg" alt="fresh food">
+        <p>Meat, Chicken and Fish</p>
+      </div>
 
-        <div class="category-cards">
-          <img src="./images/category-4.jpeg" alt="fresh food">
-          <p>Meat, Chicken and Fish</p>
+      <div class="category-cards">
+        <img src="./images/vegetables.jpg" alt="24/7">
+        <p>Fresh Vegetables</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <h1>Menu</h1>
+    <div class="menu-container">
+      <div class="menu-cards">
+        <img src="./images/vegetables.jpg" alt="24/7">
+        <p>Fresh Vegetables</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
         </div>
- 
-        <div class="category-cards">
-          <img src="./images/vegetables.jpg" alt="24/7">
-          <p>Fresh Vegetables</p>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
         </div>
       </div>
-    </section>
-
-    <section class="menu">
-      <h1>Menu</h1>
-      <div class="menu-container">
-        <div class="menu-cards">
-          <img src="./images/vegetables.jpg" alt="24/7">
-          <p>Fresh Vegetables</p>  
-          <div class="price">Rs 50 per kg</div>
-          <div class="stars">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half" aria-hidden="true"></i>
-          </div>
+      <div class="menu-cards">
+        <img src="./images/category-1.jpeg" alt="fresh food">
+        <p>Chips</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
         </div>
-          <div class="menu-cards">
-            <img src="./images/category-1.jpeg" alt="fresh food">
-            <p>Chips</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-        
-          <div class="menu-cards">
-            <img src="./images/category-2.jpeg" alt="24/7">
-            <p>Dairy Products</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>       
-          </div>
-        
-          <div class="menu-cards">
-            <img src="./images/category-3.jpeg" alt="">
-            <p>Bakery and biscuits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-          
-          <div class="menu-cards">
-            <img src="./images/category-4.jpeg" alt="fresh food">
-            <p>Meat, Chicken and Fish</p>
-            <div class="price">Rs 50 per kg</div>
-          <div class="stars">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half" aria-hidden="true"></i>
-          </div>
-          </div>
-        
-          <div class="menu-cards">
-            <img src="./images/fruits.jpg" alt="">
-            <p>Fresh Fruits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-
-          <div class="menu-cards">
-            <img src="./images/fruits.jpg" alt="">
-            <p>Fresh Fruits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-          
-          <div class="menu-cards">
-            <img src="./images/fruits.jpg" alt="">
-            <p>Fresh Fruits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-
-          <div class="menu-cards">
-            <img src="./images/fruits.jpg" alt="">
-            <p>Fresh Fruits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
-
-          <div class="menu-cards">
-            <img src="./images/fruits.jpg" alt="">
-            <p>Fresh Fruits</p>
-            <div class="price">Rs 50 per kg</div>
-            <div class="stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half" aria-hidden="true"></i>
-            </div>
-          </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
         </div>
       </div>
-    </section>
-    <section class="featured">
-      <h1>Our Features</h1>
 
-      <div class="featured container">
-        <div class="featured-cards">
-          <img src="./images/featured-1.jpg" alt="fresh food">
-          <h3>Organic and Fresh</h3>
-          <p>Fresh fruits and vegetables from out very own garden.</p>
+      <div class="menu-cards">
+        <img src="./images/category-2.jpeg" alt="24/7">
+        <p>Dairy Products</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
         </div>
-      
-        <div class="featured-cards">
-          <img src="./images/featured-2.png" alt="24/7">
-          <h3>24/7 Delivery Services</h3>
-          <p>Rapid delivery service is our top priority. </p>        
-        </div>
-      
-        <div class="featured-cards">
-          <img src="./images/featured-3.png" alt="">
-          <h3>Easy Payments</h3>
-          <p>Every online payment method is supported by FreshMart</p>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
         </div>
       </div>
-    </section>
-  </body>
+
+      <div class="menu-cards">
+        <img src="./images/category-3.jpeg" alt="">
+        <p>Bakery and biscuits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/category-4.jpeg" alt="fresh food">
+        <p>Meat, Chicken and Fish</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/fruits.jpg" alt="">
+        <p>Fresh Fruits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/fruits.jpg" alt="">
+        <p>Fresh Fruits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/fruits.jpg" alt="">
+        <p>Fresh Fruits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/fruits.jpg" alt="">
+        <p>Fresh Fruits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+
+      <div class="menu-cards">
+        <img src="./images/fruits.jpg" alt="">
+        <p>Fresh Fruits</p>
+        <div class="price">Rs 50 per kg</div>
+        <div class="stars">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="addcart">
+          <i class="fa fa-shopping-cart"></i>
+          <button class="addcart-btn"><span>Add to bucket</span></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="featured">
+    <h1>Our Features</h1>
+
+    <div class="featured container">
+      <div class="featured-cards">
+        <img src="./images/featured-1.jpg" alt="fresh food">
+        <h3>Organic and Fresh</h3>
+        <p>Fresh fruits and vegetables from out very own garden.</p>
+      </div>
+
+      <div class="featured-cards">
+        <img src="./images/featured-2.png" alt="24/7">
+        <h3>24/7 Delivery Services</h3>
+        <p>Rapid delivery service is our top priority. </p>
+      </div>
+
+      <div class="featured-cards">
+        <img src="./images/featured-3.png" alt="">
+        <h3>Easy Payments</h3>
+        <p>Every online payment method is supported by FreshMart</p>
+      </div>
+    </div>
+  </section>
+</body>
 
 <script src="app.js"></script>
+
 </html>
