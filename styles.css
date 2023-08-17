@@ -347,7 +347,7 @@ body {
 }
 
 .menu-cards {
-    padding: 3rem 4rem 6rem 1rem;
+    padding: 3rem 4rem 6rem 2rem;
     box-shadow: var(--box-shadow);
     background-color: #fff;
     text-align: center;
@@ -355,24 +355,37 @@ body {
     border-radius: 5px;
     min-width: 18rem;
     max-width: 22rem;
-    height: 29rem;
+    height: 32rem;
 }
 
 .menu-container .menu-cards img {
     width: 180px;
     height: 150px;
-    align-items: left;
+    align-items: center;
 }
 
 .menu-cards p {
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 13px;
     font-weight: 500;
+}
+.price{
+    font-size: 13px;
+    padding:0.3rem 0 0.3rem 2rem;
+}
+.stars{
+    color:orange;
+    font-size: 15px;
+    padding:0.3rem 0 0.3rem 2rem;
+
+}
+.addcart{
+    padding:0.3rem 0 0.3rem 2rem;
 }
 .addcart .addcart-btn{
     background: #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     align-items: center;
     border-radius: 5px;
     border: var(--outline) ;
