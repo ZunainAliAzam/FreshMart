@@ -293,7 +293,7 @@ body {
 }
 
 .categories h1 {
-    padding: 3rem 5rem;
+    padding: 3rem 0 0 0;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -307,7 +307,7 @@ body {
 }
 
 .category-cards {
-    padding: 3rem 4rem 3rem 1rem;
+    padding: 3rem 4rem 3rem 2rem;
     box-shadow: var(--box-shadow);
     background-color: #fff;
     text-align: center;
@@ -316,6 +316,7 @@ body {
     min-width: 18rem;
     max-width: 22rem;
     height: 25rem;
+    cursor: pointer;
 }
 
 .categories .container .category-cards img {
@@ -325,15 +326,15 @@ body {
 }
 
 .categories .container .category-cards p {
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 15px;
     font-weight: 500;
 }
 
 
 .menu h1 {
-    padding: 3rem 5rem;
+    /* padding: 1rem 5rem; */
     font-size: 2.5rem;
     text-align: center;
 }
@@ -389,6 +390,7 @@ body {
     align-items: center;
     border-radius: 5px;
     border: var(--outline) ;
+    cursor: pointer;
 }
 
 .addcart .addcart-btn:hover{
