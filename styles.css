@@ -548,6 +548,38 @@ body {
     }
 }
 
+.footer {
+    background-color:hsl(210, 11%, 15%);
+	max-width: 100%;
+	margin: 1rem auto;
+    margin-bottom: 0;
+	overflow: auto;
+    padding:20px 0 20px 100px;
+}
+
+.footer,
+.footer a {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+
+}
+
+.footer .footer-cols {
+    margin-right: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+
 @media (max-width: 450px) {
     html {
         font-size: 40%;
