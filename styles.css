@@ -180,6 +180,7 @@ body {
     top: 110%;
     transition: .4s linear;
 }
+/* Shopping Cart */
 .shopcart{
     position: fixed;
     top:0;
@@ -188,6 +189,10 @@ body {
     width:350px;
     background-color: #fff;
     box-shadow: -10px 0 15px var(--light-gray);
+    transform: translateX(110%);
+}
+.shopcart.open{
+    transform: translateX(0);
 }
 /* Cart Content */
 .cart-content{
@@ -231,6 +236,9 @@ body {
 }
 .cart-header .close-btn{
     transform: scale(1.1);
+}
+.cart-header .close-btn.close{
+    transform: translateX(110%);
 }
 
 /* Cart Items */

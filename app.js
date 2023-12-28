@@ -16,6 +16,16 @@ loginBtn.onclick = () =>{
     menu.classList.remove('active');
 }
 
+document.querySelector("#cart-btn").onclick = () =>{
+    document.querySelector(".shopcart").classList.toggle('open');
+    searchBar.classList.remove('active');
+    loginForm.classList.remove('active');
+    menu.classList.remove('active');
+}
+
+document.querySelector("#close-btn").onclick = () =>{
+    document.querySelector(".shopcart").classList.remove('open')
+}
 let menu=document.querySelector(".navbar");
 let menuBtn=document.querySelector("#menu-btn");
 
